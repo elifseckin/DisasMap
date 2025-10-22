@@ -1,19 +1,3 @@
-// DISASMAP — A simple Flutter demo app
-// Features: Sign Up, Login, Home, Interactive Map (friends & incidents),
-// Disaster Relief Resources (articles + simple AI helper), and basic state mgmt.
-// -----------------------------------------------------------------------------
-// 📦 Add these to your pubspec.yaml under `dependencies:`
-//   flutter:
-//     sdk: flutter
-//   provider: ^6.1.2
-//   flutter_map: ^6.2.1
-//   latlong2: ^0.9.0
-//   url_launcher: ^6.3.1
-//   uuid: ^4.5.1
-//   intl: ^0.19.0
-// (No API keys required; uses OpenStreetMap via flutter_map.)
-// -----------------------------------------------------------------------------
-
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -88,7 +72,6 @@ class ChatMessage {
   ChatMessage({required this.id, required this.sender, required this.text, required this.time});
 }
 
-// ===== APP STATE =====
 class AppState extends ChangeNotifier {
   final _uuid = const Uuid();
 
